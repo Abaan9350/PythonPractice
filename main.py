@@ -32,3 +32,13 @@ elif age == 18:
     print("okayy les go")
 else:
     print("poochha?")
+
+while age >=18:
+    age = int(input("Enter your age: "))
+
+
+age = int(input("Enter your age: "))
+
+while age >=18:
+    age = int(input("Enter your age: "))
+
