@@ -234,7 +234,7 @@ while True:
                     if option.lower() == "yes":
                         print("You are thinking of Pravanshu!")
                     else:
-                        print("Good in academics?")
+                        print("Good in academics??")
                         option = input()
                         if option.lower() == "yes":
                             print("Has helped everyone with assignments?")
