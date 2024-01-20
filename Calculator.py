@@ -535,3 +535,58 @@ while True:
                                 option = input()
                                 if option.lower() == "yes":
                                     print("You are thinking of Sameer!")
+
+age = int (input("Enter your age: "))
+if age >= 18:
+    print("You are an adult ")
+
+elif age == 18:
+    print("okayy les go")
+else:
+    print("poochha?")
+
+while age >=18:
+    age = int(input("Enter your age: "))
+
+
+age = int(input("Enter your age: "))
+
+while age >=18:
+    age = int(input("Enter your age: "))
+
+
+# Python program to find the factorial of a number provided by the user.
+
+# change the value for a different result
+num = 7
+
+# To take input from the user
+#num = int(input("Enter a number: "))
+
+factorial = 1
+
+# check if the number is negative, positive or zero
+if num < 0:
+   print("Sorry, factorial does not exist for negative numbers")
+elif num == 0:
+   print("The factorial of 0 is 1")
+else:
+   for i in range(1,num + 1):
+       factorial = factorial*i
+   print("The factorial of",num,"is",factorial)
+
+
+# Python program to remove multiple
+# elements from a list
+
+# creating a list
+list1 = [11, 5, 17, 18, 23, 50]
+
+# Iterate each element in list
+# and add them in variable total
+for ele in list1:
+	if ele % 2 == 0:
+		list1.remove(ele)
+
+# printing modified list
+print("New list after removing all even numbers: ", list1)
