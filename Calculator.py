@@ -590,3 +590,29 @@ for ele in list1:
 
 # printing modified list
 print("New list after removing all even numbers: ", list1)
+
+
+import random
+
+def basic_chatbot():
+    responses = {
+        "hello": ["Hi there!", "Hello!", "Hey!"],
+        "how are you": ["I'm doing well, thanks!", "I'm good, how about you?", "All good!"],
+        "bye": ["Goodbye!", "See you later!", "Take care!"],
+        "default": ["I'm not sure how to respond to that.", "Sorry, I didn't get that.", "Could you please rephrase that?"]
+    }
+
+    print("Basic Chatbot: Hello! I'm a simple chatbot. Type 'bye' to exit.")
+
+    while True:
+        user_input = input("You: ").lower()
+
+        if user_input == 'bye':
+            print("Basic Chatbot: Goodbye! Have a great day.")
+            break
+
+        response = responses.get(user_input, responses["default"])
+        print("Basic Chatbot:", random.choice(response))
+
+if __name__ == "__main__":
+    basic_chatbot()
